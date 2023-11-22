@@ -1,0 +1,17 @@
+.categorias{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    background-color: pink;
+
+}
+
+.carrito{
+    width: 20px;
+    height: 20px;
+}
+
