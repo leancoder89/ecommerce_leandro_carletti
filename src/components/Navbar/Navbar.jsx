@@ -3,7 +3,7 @@ import CartWidget from '../CartWidge/Cartwidget'
 
 const Navbar = () => {
     return (
-<nav className={classes.container} style={{display:'flex', justifyContent: 'space-around' }}>
+ <nav className={classes.container} >
     <h1>Yerba Mate Store</h1>
     <section className={classes.categorias}>
         <button className='btn btn-dark'>Yerba Mate</button>
