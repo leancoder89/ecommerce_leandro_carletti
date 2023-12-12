@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    font-size: 5 rem;
+}
+
 .categorias{
     width: 50%;
     display: flex;
@@ -19,3 +24,4 @@ nav {
 display: flex;
 justify-content: space-around;
 }
+

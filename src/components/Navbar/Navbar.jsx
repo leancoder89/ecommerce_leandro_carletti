@@ -1,14 +1,15 @@
 import classes from '../Navbar/Navbar.module.css'
 import CartWidget from '../CartWidge/Cartwidget'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
- <nav className={classes.container} >
-    <h1>Yerba Mate Store</h1>
+ <nav className={classes.container}>
+    <Link to='/'>Yerba Mate Store</Link>
     <section className={classes.categorias}>
-        <button className='btn btn-dark'>Yerba Mate</button>
-        <button className='btn btn-dark'>Mates</button>
-        <button className='btn btn-dark'>Bombillas</button>
+        <Link to= '/category/yerbas' className = 'btn btn-dark'>Yerba Mate</Link>
+        <Link to= '/category/mates' className='btn btn-dark'>Mates</Link>
+        <Link to='category/bombillas' className='btn btn-dark'>Bombillas</Link>
     </section>
     <CartWidget />
 </nav>
