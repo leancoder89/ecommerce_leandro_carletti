@@ -1,19 +1,39 @@
-import classes from '../Navbar/Navbar.module.css'
-import CartWidget from '../CartWidge/Cartwidget'
-import { Link } from 'react-router-dom'
+import React from "react";
+import classes from "./NavBar.module.css";
+import CartWidget from "../CartWidget/CartWidget";
+import ReactImg2 from "./assets/yerbamatestore.png";
+import { Link, useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const NavBar = () => {
+    const navigate = useNavigate();
+
     return (
- <nav className={classes.container}>
-    <Link to='/'>Yerba Mate Store</Link>
-    <section className={classes.categorias}>
-        <Link to= '/category/yerbas' className = 'btn btn-dark'>Yerba Mate</Link>
-        <Link to= '/category/mates' className='btn btn-dark'>Mates</Link>
-        <Link to='category/bombillas' className='btn btn-dark'>Bombillas</Link>
-    </section>
-    <CartWidget />
-</nav>
-    )
-    }
+        <nav
+            className={classes.container}
+            style={{ display: "flex", justifyContent: "space-between" }}
+        >
+            <div className={classes.divlogo}>
+                <img onClick={() => navigate("/")} src={ReactImg2} alt="" />
+            </div>
+            <section className={classes.categories}>
+                <Link to="/category/yerbas" className={classes.button}>
+                    YERBAS
+                </Link>
 
-    export default Navbar
+                <Link to="/category/mates" className={classes.button}>
+                    MATES
+                </Link>
+
+                <Link to="/category/bombillas" className={classes.button}>
+                    BOMBILLAS
+                </Link>
+
+                <div className={classes.cartwidget} onClick={() => navigate("/cart")}>
+                    <CartWidget />{" "}
+                </div>
+            </section>
+        </nav>
+    );
+};
+
+export default NavBar;
