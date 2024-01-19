@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useCart } from "../../context/CartContext";
-import classes from "./ItemDetail.module.css";
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useCart } from '../../context/CartContext'
+import classes from './ItemDetail.module.css'
 
 const InputCount = ({ onAdd, stock, initial = 1 }) => {
     const [count, setCount] = useState(initial);

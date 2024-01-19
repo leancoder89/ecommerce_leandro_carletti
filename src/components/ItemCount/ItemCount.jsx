@@ -1,5 +1,5 @@
-import { useState } from "react";
-import classes from "./ItemCount.module.css";
+import { useState } from 'react'
+import classes from './ItemCount.module.css'
 
 const ItemCount = ({ incrementBy, onAdd }) => {
     const [count, setCount] = useState(0)

@@ -1,6 +1,6 @@
-import { useCart } from "../../context/CartContext";
-import { Link } from "react-router-dom";
-import classes from "./CartView.module.css";
+import { useCart } from "../../context/CartContext"
+import { Link } from "react-router-dom"
+import classes from "./CartView.module.css"
 
 const CartView = () => {
     const { cart, total, removeItem } = useCart();

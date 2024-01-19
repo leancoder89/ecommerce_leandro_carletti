@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import ItemDetail from "../ItemDetail/ItemDetail";
-import { getDoc, doc } from "firebase/firestore";
-import { db } from "../../services/firebase/firebaseConfig";
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../../services/firebase/firebaseConfig'
 
 const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);

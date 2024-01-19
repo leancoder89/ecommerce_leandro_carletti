@@ -1,5 +1,5 @@
-import classes from "./Item.module.css";
-import { Link } from "react-router-dom";
+import classes from './Item.module.css'
+import { Link } from 'react-router-dom'
 
 const Item = ({ id, name, img, price }) => {
     return (

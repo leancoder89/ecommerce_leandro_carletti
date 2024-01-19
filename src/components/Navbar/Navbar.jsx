@@ -1,10 +1,10 @@
-import React from "react";
-import classes from "./NavBar.module.css";
-import CartWidget from "../CartWidget/CartWidget";
-import ReactImg2 from "./assets/yerbamatestore.png";
-import { Link, useNavigate } from "react-router-dom";
+import React from 'react'
+import classes from './NavBar.module.css'
+import CartWidget from '../CartWidget/CartWidget'
+import ReactImg2 from './assets/yerbamatestore.png'
+import { Link, useNavigate } from 'react-router-dom'
 
-const NavBar = () => {
+const Navbar = () => {
     const navigate = useNavigate();
 
     return (
@@ -36,4 +36,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navbar;

@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { useCart } from '../../context/CartContext';
-import { db } from '../../services/firebase/firebaseConfig';
-import {addDoc, getDocs, collection, query, where, documentId, writeBatch} from 'firebase/firestore';
-import { useForm } from 'react-hook-form';
-import classes from './Checkout.module.css';
+import { useState } from 'react'
+import { useCart } from '../../context/CartContext'
+import { db } from '../../services/firebase/firebaseConfig'
+import {addDoc, getDocs, collection, query, where, documentId, writeBatch} from 'firebase/firestore'
+import { useForm } from 'react-hook-form'
+import classes from './Checkout.module.css'
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
