@@ -13,14 +13,14 @@ const Checkout = () => {
 
     const { register, handleSubmit } = useForm();
 
-    const createOrder = async (userData) => {
+    const createOrder = async (data) => {
         try {
             setLoading(true);
             const objOrder = {
                 buyer: {
-                    name: userData.name,
-                    phone: userData.phone,
-                    email: userData.email,
+                    name: data.name,
+                    phone: data.phone,
+                    email: data.email,
                 },
                 items: cart,
                 total,
@@ -100,7 +100,7 @@ const Checkout = () => {
                         {...register("phone")}
                     />
 
-                    <button className={classes.button} onClick={createOrder}>GENERAR ORDEN</button>
+                    <button className={classes.button}>GENERAR ORDEN</button>
                 </form>
             </div>
         </>
