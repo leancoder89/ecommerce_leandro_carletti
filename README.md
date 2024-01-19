@@ -8,14 +8,14 @@
 
 **#### Proceso de instalacion:**
 
-En Windows, dirigase a "este equipo", luego vaya a "Disco local (C:)" y cree una carpeta para el proyecto.
+En Windows, dirijase a "este equipo", luego vaya a "Disco local (C:)" y cree una carpeta para el proyecto.
 En VSC, dentro de la terminal, busque el archivo "C:/ecommerce_leandro_carletti"
 
 1. install Node.js
 2. npm install
 3. create-react-app
-4. npm install react-router-dom ( It allows you to display pages and allow users to navigate them)
-5. npm install react-hook-form (React form library that helps you validate forms quickly)
+4. npm install react-router-dom (permite mostrar páginas y permitir a los usuarios navegar por ellas)
+5. npm install react-hook-form (biblioteca de formularios de React que le ayuda a validar formularios rápidamente)
 
 **#### Rutas y Componentes**
 
