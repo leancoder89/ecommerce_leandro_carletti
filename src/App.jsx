@@ -1,6 +1,6 @@
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NavBar from './components/Navbar/NavBar'
+import Navbar from './components/Navbar/NavBar'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext'
 import CartView from './components/CartView/CartView'
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <CartProvider>
-          <NavBar />
+          <Navbar />
           <Routes>
             <Route path="/" element={<ItemListContainer greeting={"Bienvenidos"} />} />
             <Route path="/category/:categoryId" element={<ItemListContainer greeting={"Productos filtrados"} />} />
